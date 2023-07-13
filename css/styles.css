@@ -1,0 +1,149 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/* Variables */
+
+:root{
+    --main-color: #2288ff ;
+    --second-color: #192f6a;
+    --text-color: #314862;
+    --bg-color: #fff;
+
+    /* Box shadow */
+
+    --box-shadow:2px 2px 18px rgb(14 52 54 / 15%) ;
+}
+
+img{
+    width: 100%;
+
+}
+
+body{
+    color: var(--text-color);
+}
+
+section{
+    padding: 4.5rem 0 3 rem;
+}
+
+.container{
+    max-width: 1068px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.btn{
+   padding: 8px 22px;
+background: var(--main-color);
+color: var(--bg-color);
+border-radius: 5rem;
+}
+
+.btn:hover{
+   background: #3492fd;     
+}
+
+/* Home */
+
+.home{
+    
+    background: url(../img/P1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-text{
+    padding-left: 35px;
+}
+
+.home-text h1{
+    color: var(--bg-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem,auto));
+    gap: 2rem;
+}
+
+.about-img img{
+    border-radius: 1.5rem ;
+}
+
+.about-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--main-color);
+
+}
+
+.about-text h2{
+    font-size: 1.7rem;
+}
+
+.about-text p {
+    font-size: 0.938rem;
+    margin: 1rem 0 1rem;
+}
+
+.sales{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    gap: 2.4rem;
+}
+
+.sales .box{
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border-radius: 2rem; 
+}
+
+.sales .box:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.4s all linear;
+}
+
+.sales .box .bx{
+    padding: 10px;
+    border-radius: 50%;
+    background: #f6f6fe;
+    color: var(--main-color);
+    font-size: 20px ;
+}
+
+.sale .box h3{
+    font-size: 1.1rem;
+    margin: 1rem 0 0.4rem;
+}
+
+.sales .box p{
+      font-size: .938rem;
+}
+
