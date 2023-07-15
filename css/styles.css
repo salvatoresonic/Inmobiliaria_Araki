@@ -372,7 +372,7 @@ section {
   }
 }
 
-@media screen and (max-width: 4422px) {
+@media screen and (max-width: 420px) {
   .home-text {
     padding-left: 14px;
   }
@@ -389,6 +389,11 @@ section {
 
   .properties-container {
     padding: 0;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
   }
 
   .newsletter #email-box {
