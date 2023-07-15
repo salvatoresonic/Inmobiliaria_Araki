@@ -50,6 +50,7 @@ section {
   background: var(--main-color);
   color: var(--bg-color);
   border-radius: 5rem;
+  border: var(--bg-color);
 }
 
 .btn:hover {
