@@ -56,6 +56,10 @@ section {
   background: #3492fd;
 }
 
+.logo {
+  border: 5px solid transparent;
+}
+
 /* Home */
 
 .home {
