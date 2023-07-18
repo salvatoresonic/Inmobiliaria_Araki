@@ -1,139 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inmobiliaria Araki Beta</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-        />
-        <link rel="stylesheet" href="css/styles.css" />
 
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inmobiliaria Araki Beta</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <body>
-        <!-- Header -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
 
-        <header>
-            <img src="img/Logo_Araki_No_BG.png" alt="" class="logo" />
-            <button class="abrir-menu" id="abrir">
-                <i class="bi bi-list"> </i>
+<body>
+    <!-- Header -->
+
+    <header>
+        <img src="img/Logo_Araki_No_BG.png" alt="" class="logo" />
+        <button class="abrir-menu" id="abrir">
+            <i class="bi bi-list"> </i>
+        </button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar">
+                <i class="bi bi-x"></i>
             </button>
-            <nav class="nav" id="nav">
-                <button class="cerrar-menu" id="cerrar">
-                    <i class="bi bi-x"></i>
-                </button>
-                <ul class="nav-list">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="index.html">Quiénes somos</a></li>
-                    <li><a href="index.html">Propiedades</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li>
-                        <a href="https://wa.me/525515110033"
-                            ><i
-                                class="bx bxl-whatsapp bx-tada"
-                                id="whatsapp"
-                            ></i
-                        ></a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn">Contáctanos</button>
-        </header>
-        <!-- log in -->
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Quiénes somos</a></li>
+                <li><a href="index.html">Propiedades</a></li>
+                <li><a href="">Contacto</a></li>
+                <li>
+                    <a href="https://wa.me/525515110033"><i class="bx bxl-whatsapp bx-tada" id="whatsapp"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn">Contáctanos</button>
+    </header>
+    <!-- log in -->
 
-        <div class="login container">
-            <div class="login-container">
-                <h2>Bienvenido, gracias por contactarnos</h2>
-                <p>
-                    Ingresa tus datos y un asesor experto se pondrá en contacto
-                    contigo
-                </p>
+    <div class="login container">
+        <div class="login-container">
+            <h2>Bienvenido, gracias por contactarnos</h2>
+            <p>
+                Ingresa tus datos y un asesor experto se pondrá en contacto
+                contigo
+            </p>
 
-                <!-- Log in form -->
-                <form action="">
-                    <span>Ingresa tu nombre</span>
-                    <input
-                        type="text"
-                        name=""
-                        id="nombre"
-                        placeholder="Nombre"
-                        required
-                    />
-                    <span>Ingresa tu teléfono</span>
-                    <input
-                        type="tel"
-                        name=""
-                        id="telefono"
-                        placeholder="Telefono"
-                        required
-                    />
-                    <span>Ingresa tu correo electrónico</span>
-                    <input
-                        type="email"
-                        name=""
-                        id=""
-                        placeholder="tucorreoelectrónico@gmail.com"
-                        required
-                    />
-                    <span>Mensaje deseado</span>
-                    <textarea
-                        name=""
-                        id=""
-                        cols="30"
-                        rows="3"
-                        placeholder="Propiedad de interés"
-                    ></textarea>
-                    <input type="submit" value="Enviar" class="buttom" />
-                </form>
-            </div>
+            <!-- Log in form -->
+            <form action="https://formsubmit.co/salvador.ambriz.maya@gmail.com" method="POST">
+                <span>Ingresa tu nombre</span>
+                <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required />
+                <span>Ingresa tu teléfono</span>
+                <input type="tel" name="Telefono" id="telefono" placeholder="Telefono" required />
+                <span>Ingresa tu correo electrónico</span>
+                <input type="email" name="email" id="" placeholder="tucorreoelectrónico@gmail.com" required />
+                <span>Mensaje deseado</span>
+                <textarea name="Mensaje" id="" cols="30" rows="3" placeholder="Propiedad de interés"></textarea>
+                <input type="submit" value="Enviar" class="buttom" />
 
-            <!-- Log in Image -->
-            <div class="login-image">
-                <img src="img/Welcome.png" alt="" />
-            </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+
+            </form>
         </div>
 
-        <!-- Footer -->
-        <section class="footer">
-            <div class="footer-container container">
-                <h2>Araki <br />Inmobiliaria</h2>
-                <div class="footer-box">
-                    <h3>Links</h3>
-                    <a href="#">Agencia</a>
-                    <a href="#">Propiedades</a>
-                    <a href="#">Tarifas</a>
-                </div>
-                <div class="footer-box">
-                    <h3>Locaciones</h3>
-                    <a href="#">Cdmx</a>
-                    <a href="#">Querétaro</a>
-                    <a href="#">Morelos</a>
-                </div>
-                <div class="footer-box">
-                    <h3>Contacto</h3>
-                    <a href="#">+52 555 555 555</a>
-                    <a href="#">araki-inmobiliaria@gmail.com</a>
-                    <div class="social">
-                        <a href=""><i class="bx bxl-facebook"></i></a>
-                        <a href=""><i class="bx bxl-twitter"></i></a>
-                        <a href=""><i class="bx bxl-instagram"></i></a>
-                    </div>
+        <!-- Log in Image -->
+        <div class="login-image">
+            <img src="img/Welcome.png" alt="" />
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <h2>Araki <br />Inmobiliaria</h2>
+            <div class="footer-box">
+                <h3>Links</h3>
+                <a href="#">Agencia</a>
+                <a href="#">Propiedades</a>
+                <a href="#">Tarifas</a>
+            </div>
+            <div class="footer-box">
+                <h3>Locaciones</h3>
+                <a href="#">Cdmx</a>
+                <a href="#">Querétaro</a>
+                <a href="#">Morelos</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contacto</h3>
+                <a href="#">+52 555 555 555</a>
+                <a href="#">araki-inmobiliaria@gmail.com</a>
+                <div class="social">
+                    <a href=""><i class="bx bxl-facebook"></i></a>
+                    <a href=""><i class="bx bxl-twitter"></i></a>
+                    <a href=""><i class="bx bxl-instagram"></i></a>
                 </div>
             </div>
-        </section>
-
-        <!-- Copyright -->
-        <div class="copyright">
-            <p>@ Salvatoresonic All Rights Reserved</p>
         </div>
+    </section>
 
-        <script src="js/main.js"></script>
-    </body>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>@ Salvatoresonic All Rights Reserved</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
 </html>

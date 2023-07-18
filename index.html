@@ -16,27 +16,27 @@
 
 <body>
     <!-- Header -->
-    
+
     <header id="home">
         <img src="img/Logo_Araki_No_BG.png" alt="" class="logo">
         <button class="abrir-menu" id="abrir"><i class="bi bi-list">
-        </i></button>
-    <nav class="nav" id="nav">
-        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            </i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
                 <li><a id="inicio" href="#home">Inicio</a></li>
                 <li><a id="quienes" href="#about">Quiénes somos</a></li>
-                <li><a id="propiedades" href="#sales">Propiedades</a></li>
+                <li><a id="propiedades" href="#properties">Propiedades</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="https://wa.me/525515110033"><i class='bx bxl-whatsapp bx-tada' id="whatsapp"></i></a></li>
             </ul>
 
         </nav>
-        <a href="contacto.html"><button class="btn" >Contáctanos</button></a>
+        <a href="contacto.html"><button class="btn">Contáctanos</button></a>
     </header>
 
     <!-- Home section -->
-    <section class="home container" >
+    <section class="home container">
         <div class="home-text">
             <h1>Encuentra tu próximo <br> lugar perfecto <br> para vivir.</h1>
             <a href="#" class="btn">Contáctanos </a>
@@ -199,10 +199,13 @@
     <!-- Newsletter -->
     <section class="newsletter container">
         <h2>¿Tienes alguna pregunta? <br> Déjanos ayudarte </h2>
-        <form class="form" action="">
-            <input type="email" name="" id="email-box" placeholder="your_email@email.com" required>
+        <form class="form" action="https://formsubmit.co/salvador.ambriz.maya@gmail.com" method="POST">
+            <input type="email" name="email" id="email-box" placeholder="your_email@email.com" required>
+            <input type="submit" value="Enviar" class="buttom" />
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
         </form>
-        <input type="submit" value="Enviar" class="btn ">
+
     </section>
 
     <!-- Footer -->
